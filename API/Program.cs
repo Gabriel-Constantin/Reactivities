@@ -43,6 +43,7 @@ namespace API
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.UseUrls("http://192.168.1.20:5000");
                     webBuilder.UseStartup<Startup>();
                 });
     }
